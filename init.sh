@@ -11,9 +11,6 @@ python3 -m venv .venv/5AT020
 # Add it as a Jupyter kernel
 .venv/5AT020/bin/python -m ipykernel install --user --name=5AT0020 --display-name "Python (.venv/5AT020)"
 
-# Install the required packages
-.venv/5AT020/bin/python -m pip install -r requirements.txt
-
 # Download eDrives repository
 git clone https://github.com/jdjotad/5AT020-eDrives ./temp
 
@@ -22,3 +19,6 @@ rsync -av --exclude='.git' --exclude='.gitignore' ./temp/ ./
 
 # Remove the temporary repository
 rm -rf ./temp
+
+# Install the required packages
+.venv/5AT020/bin/python -m pip install -r requirements.txt
