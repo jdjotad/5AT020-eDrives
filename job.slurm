@@ -33,7 +33,7 @@ SCRIPT_DIR="$(pwd)"
 
 # -------------- Code -------------- #
 # Load virtual environment
-source "$SCRIPT_DIR/.venv/5AT020/activate"
+source "$SCRIPT_DIR/.venv/5AT020/bin/activate"
 
 # Execute a Python program.
 python "$SCRIPT_DIR/test_slurm.py"
