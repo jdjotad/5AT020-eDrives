@@ -138,7 +138,7 @@ class PIController:
         error = reference - measured
 
         # Define error accumulation
-        self.error_sum = error * self.Ts
+        self.error_sum += error * self.Ts
         
         # Compute action "u"
         # u = Kp*e + Ki*Ts*Σe
