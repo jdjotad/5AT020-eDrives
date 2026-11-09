@@ -1,0 +1,12 @@
+gymnasium
+ipython
+ipywidgets
+matplotlib
+numpy
+pandas
+qpsolvers
+ray
+scipy
+stable_baselines3
+tqdm
+osqp
